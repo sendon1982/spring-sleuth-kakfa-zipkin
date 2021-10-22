@@ -31,10 +31,13 @@ put that url in the browser
 
 # Find the traceId from log and search it in Zipkin Admin UI
 
+### Terminal console
 ![console-image.png](console.png)
 
+### Trace invocation screenshot
 ![zipkin-image.png](zipkin.png)
 
+### Trace dependency screenshot
 ![trace-image.png](trace.png)
 
 # Background
