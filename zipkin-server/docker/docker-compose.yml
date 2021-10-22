@@ -4,6 +4,10 @@ services:
     image: landoop/fast-data-dev:latest
     ports:
       - "3030:3030"
+      - "9092:9092"
+    environment:
+      ADV_HOST: 127.0.0.1
+      BROKER_PORT: 9092
 
   zipkin-server:
     image: openzipkin/zipkin

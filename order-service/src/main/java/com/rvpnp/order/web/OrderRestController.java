@@ -13,18 +13,17 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/")
 public class OrderRestController {
 
-  private static final String CAPITAL_APP_HOST = "http://localhost:9081";
-  private static final String BAAP_ONBOARD_HOST = "http://localhost:9083";
+    private static final String PRODUCT_SERVICE_HOST = "http://localhost:9083";
 
-  private final RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
 
-  @GetMapping("/identifiers/capital-id/adb200dd5883")
-  public void getBrandCapitalId() throws InterruptedException {
-    log.info("Calling getBrandCapitalId at system-id-store");
+    @GetMapping("/orders/b200dc5873")
+    public void getOrderDetailInfo() throws InterruptedException {
+        log.info("Calling getOrderDetailInfo at order-service");
 
-    Thread.sleep(1000);
+        Thread.sleep(1000);
 
-    restTemplate.getForEntity(BAAP_ONBOARD_HOST + "/v3/customer/email", String.class);
-    log.info("Calling BAAP_ONBOARD {} from system-id-store", BAAP_ONBOARD_HOST);
-  }
+        restTemplate.getForEntity(PRODUCT_SERVICE_HOST + "/products/123", String.class);
+        log.info("Calling PRODUCT_SERVICE_HOST {} from order-service", PRODUCT_SERVICE_HOST);
+    }
 }
