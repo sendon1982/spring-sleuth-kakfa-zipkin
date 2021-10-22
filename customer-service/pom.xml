@@ -12,8 +12,7 @@
     <groupId>com.rvpnp</groupId>
     <artifactId>customer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>capital-app</name>
-    <description>Demo project for Spring Boot</description>
+    <name>customer-service</name>
 
     <properties>
         <java.version>11</java.version>
