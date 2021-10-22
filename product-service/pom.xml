@@ -12,9 +12,8 @@
     <groupId>com.rvpnp</groupId>
     <artifactId>product-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>baap-onboard</name>
-    <description>Demo project for Spring Boot</description>
-
+    <name>product-service</name>
+         
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2020.0.4</spring-cloud.version>
