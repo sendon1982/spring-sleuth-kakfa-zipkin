@@ -1,0 +1,11 @@
+version: '3'
+services:
+  kafka-service:
+    image: landoop/fast-data-dev:latest
+    ports:
+      - "3030:3030"
+
+  zipkin-server:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
